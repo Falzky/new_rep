@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #bc7e18;
+}
+h1{
+    text-align: center;
+    color: #fff;
+}
+
+p{
+    color: red;
+}
+.input{
+    margin-left: 100px;
+}
+
+.form-wrapper{
+    border: 2px solid black;
+    width: 400px;
+    height: 300px;
+    margin:150px auto;
+    border-radius: 10px;
+}
+.submit{
+    margin-top: 10px;
+    margin-left: 150px;
+}

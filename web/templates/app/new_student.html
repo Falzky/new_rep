@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <form class="form-wrapper" method="post" >
+        {% csrf_token %}
+        <h1>Create a Record </h1>
+        {% for message in messages %}
+        <p>{{message}}</p>
+        {% endfor %}
+        <label for="Name">Name:</label>
+        <input class="input" name="fifth" type="text"><br>
+        <label for="Registration Number">Registration Number:</label>
+        <input class="input" name="second" type="text"><br>
+        <label for="Age">Age:</label>
+        <input class="input" name="fourth" type="text"><br>
+        <label for="cgpa">Cgpa:</label>
+        <input class="input" name="seven" type="text"><br>
+        <label for="Date Of Birth">D.O.B:</label>
+        <input type="date" class="input" name="first"><br>
+        <input type="submit">
+    </form>
+    <a href="{% url 'gold' %}">Create a student account</a>
+</body>
+</html>
